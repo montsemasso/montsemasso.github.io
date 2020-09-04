@@ -80,11 +80,21 @@
     <link rel="stylesheet" href="dist/jg/3.8.0/css/justifiedGallery.css" />
     <script src="dist/jg/3.8.0/js/jquery.justifiedGallery.js"></script>
 
+
+    <script> 
+      $(function(){
+        $("#mynavbar").load("navbar.html"); 
+      });
+      </script> 
+
   </head>
 
   <body>
 
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <div id="mynavbar"></div>
+
+
+<!--<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="index.html" style="font-family: 'Dancing Script', cursive;font-size: 30px;">       
       <strong>Montse Massó</strong></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -101,7 +111,7 @@
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
+            Obra
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="template.html">Mercat de Reus</a>
@@ -115,7 +125,7 @@
         </li>
       </ul>
     </div>
-  </nav>
+  </nav>-->
 
   <main role="main" class="container">
     <h1 class="jg-h1">Mercats de Reus</h1>
@@ -235,10 +245,9 @@
 <footer class="text-muted bg-dark">
   <div class="container">
     <p class="float-right">
-      <a href="#">Back to top</a>
+      <a href="#">↑</a>
     </p>
     <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-    <p>New to Bootstrap? <a href="https://getbootstrap.com/">Visit the homepage</a> or read our <a href="../getting-started/introduction/">getting started guide</a>.</p>
   </div>
 </footer>
 
