@@ -34,8 +34,9 @@ footer p {
 
 /*  Navbar top fixed */
 body {
-  min-height: 4.5rem;
-  padding-top: 4.5rem;
+/*  min-height: 5rem;
+  padding-top: 5rem;*/
+    /*padding-top: 70px;*/
 }
 
 /* Cards */
