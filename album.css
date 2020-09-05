@@ -32,10 +32,19 @@ footer p {
   margin-bottom: .25rem;
 }
 
+/*  Navbar top fixed */
+body {
+  min-height: 4.5rem;
+  padding-top: 4.5rem;
+}
+
+/* Cards */
 .painting_card {
   max-height: 225px;
   overflow: hidden;
 }
+
+/* Gallery */
 
 h1.jg-h1 {
   text-align: center;
