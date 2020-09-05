@@ -180,22 +180,49 @@
          
       
           </div>
+
+
+<script>
+
+
+$('#mygallery').justifiedGallery({
+            rowHeight : 225
+      }).on('jg.complete', function () {
+          $('#mygallery').lightGallery({
+            thumbnail:true,
+              animateThumb: true,
+              getCaptionFromTitleOrAlt: false,
+              download: false
+          });
+      });
+
+</script>
+
+
+<!--
           <script>
             $(document).ready(function() {
                 $("#mygallery").lightGallery({
               thumbnail:true,
               animateThumb: true,
+              getCaptionFromTitleOrAlt: false,
               download: false
           }); 
             });
           
           
-            $("#mygallery").justifiedGallery({
-              rowHeight: 225
-            });
+
           
           </script>
 
+
+<script>
+
+$("#mygallery").justifiedGallery({
+              rowHeight: 225
+            });
+
+</script>-->
 
 
 
