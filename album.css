@@ -39,12 +39,15 @@ footer p {
 }*/
 
 
-@media (max-width: 991px) {
-  .navbar {
-      overflow: auto;
-      max-height: 85vh;
-      align-items: flex-start;
-  }
+.navbar-collapse {
+  max-height: 60vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.collapsing {
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 /* Menu */
