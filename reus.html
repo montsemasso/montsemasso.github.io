@@ -38,10 +38,10 @@
 
 
         <!-- Bootstrap CSS -->
-        <link type="text/css" rel="stylesheet" href="dist/bootstrap/4.5.2/css/bootstrap.min.css" />
+        <link type="text/css" rel="stylesheet" href="/dist/bootstrap/4.5.2/css/bootstrap.min.css" />
 
         <!-- LG CSS -->
-        <link type="text/css" rel="stylesheet" href="dist/lg/1.8.2/css/lightgallery.css" />
+        <link type="text/css" rel="stylesheet" href="/dist/lg/1.8.2/css/lightgallery.css" />
 
         <link href="https://fonts.googleapis.com/css?family=Dancing%20Script" rel="stylesheet">
 
@@ -54,35 +54,28 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
 
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/popper.min.js" integrity="sha512-eHo1pysFqNmmGhQ8DnYZfBVDlgFSbv3rxS0b/5+Eyvgem/xk0068cceD8GTlJOZsUrtjANIrFhhlwmsL1K3PKg==" crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <!--<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>-->
 
+    <script src="/dist/bootstrap/4.5.2/js/bootstrap.bundle.min.js" ></script>
 
-    <!-- Bootstrap -->
-    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js" integrity="sha512-/DXTXr6nQodMUiq+IUJYCt2PPOUjrHJ9wFrqpJ3XkgPNOZVfMok7cRw6CSxyCQxXn6ozlESsSh1/sMCTF1rL/g==" crossorigin="anonymous"></script>      -->
-    <script src="dist/bootstrap/4.5.2/js/bootstrap.bundle.min.js" ></script>
+    <link rel="stylesheet" href="/dist/jg/3.8.0/css/justifiedGallery.css" />
+    <script src="/dist/jg/3.8.0/js/jquery.justifiedGallery.js"></script>
 
-    <!-- LG -->
-    <script src="dist/lg/1.8.2/js/lightgallery.min.js"></script>
-
-    <!-- LG plugins -->
-    <script src="dist/lg/1.8.2/js/modules/lg-thumbnail.min.js"></script>
-    <script src="dist/lg/1.8.2/js/modules/lg-fullscreen.min.js"></script>
-    <script src="dist/lg/1.8.2/js/modules/lg-zoom.js"></script>
-    <script src="dist/lg/1.8.2/js/modules/lg-autoplay.js"></script>
+    <script src="/dist/lg/1.8.2/js/lightgallery.min.js"></script>
+    <script src="/dist/lg/1.8.2/js/modules/lg-thumbnail.min.js"></script>
+    <script src="/dist/lg/1.8.2/js/modules/lg-fullscreen.min.js"></script>
+    <script src="/dist/lg/1.8.2/js/modules/lg-zoom.js"></script>
+    <script src="/dist/lg/1.8.2/js/modules/lg-autoplay.js"></script>
 
 
-    <!--<script src="../lightgallery/js/lg-video.js"></script>
-    <script src="../lightgallery/js/lg-autoplay.js"></script>-->
-
-    <link rel="stylesheet" href="dist/jg/3.8.0/css/justifiedGallery.css" />
-    <script src="dist/jg/3.8.0/js/jquery.justifiedGallery.js"></script>
 
 
     <script> 
       $(function(){
-        $("#mynavbar").load("navbar.html"); 
+        $("#mmnavbar").load("navbar.html"); 
+        $("#mmfooter").load("/assets/components/footer.html");
       });
       </script> 
 
@@ -92,58 +85,10 @@
 
   <body>
 
-    <div id="mynavbar"></div>
-
-
-<!--<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="index.html" style="font-family: 'Dancing Script', cursive;font-size: 30px;">       
-      <strong>Montse Massó</strong></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Pintura<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://www.instagram.com/montse.mercats">Instagram</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Obra
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="template.html">Mercat de Reus</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-    </div>
-  </nav>-->
+    <div id="mmnavbar"></div>
 
   <main class="container">
     <h1 class="jg-h1">Mercat central</h1>
-    <!--<div class="jumbotron">
-      <h1 class="jg-h1">Mercats de Reus</h1>
-      <p class="lead">This example is a quick exercise to illustrate how fixed to top navbar works. As you scroll, it will remain fixed to the top of your browser’s viewport.</p>
-      <a class="btn btn-lg btn-primary" href="/docs/4.5/components/navbar/" role="button">View navbar docs &raquo;</a>
-    </div>-->
-  <!--</main>
-
-<main role="main" >
-
-  <section class="jumbotron text-center">
-    <div class="container">
-      <h1 class="jg-h1">Mercats de Reus</h1>
-    </div>
-  </section>-->
 
   <div class="album py-4">
     <div class="container">      
@@ -195,7 +140,8 @@ $('#mygallery').justifiedGallery({
             rowHeight : 180,
             maxRowHeight: 270,
             margins: 3 ,
-            border: 0
+            border: 0,
+            lastRow : 'nojustify'
       }).on('jg.complete', function () {
           $('#mygallery').lightGallery({
             hideBarsDelay: 1500,
@@ -208,72 +154,6 @@ $('#mygallery').justifiedGallery({
 
 </script>
 
-
-<!--
-          <script>
-            $(document).ready(function() {
-                $("#mygallery").lightGallery({
-              thumbnail:true,
-              animateThumb: true,
-              getCaptionFromTitleOrAlt: false,
-              download: false
-          }); 
-            });
-          
-          
-
-          
-          </script>
-
-
-<script>
-
-$("#mygallery").justifiedGallery({
-              rowHeight: 225
-            });
-
-</script>-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         
       </div>
     </div>
@@ -281,19 +161,8 @@ $("#mygallery").justifiedGallery({
 
 </main>
 
-<footer class="text-muted bg-white">
-  <div class="container">
-    <p class="float-right">
-      <a href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-up-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-        <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"/>
-      </svg></a>
-    </p>
-    <p>&copy; Montse Massó, Reus 2020</p>
-  </div>
-</footer>
 
-
+<div id="mmfooter"></div>
 
 </body>
 
