@@ -1,13 +1,14 @@
 <div id="mmjgallery">
     <script>
-      $('#mygallery').justifiedGallery({
+      $('#mmgallery').justifiedGallery({
         rowHeight : 180,
         maxRowHeight: 270,
         margins: 3 ,
         border: 0,
-        lastRow : 'nojustify'
+        lastRow : 'nojustify',
+        waitThumbnailsLoad: false
       }).on('jg.complete', function () {
-        $('#mygallery').lightGallery({
+        $('#mmgallery').lightGallery({
           hideBarsDelay: 1500,
           thumbnail:true,
           animateThumb: true,
