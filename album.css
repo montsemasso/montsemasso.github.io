@@ -34,7 +34,7 @@ footer p {
 
 
 .navbar-collapse.collapse.show {
-  max-height: 280px;
+  max-height: 50%;
   overflow-y: auto;
 }
 
