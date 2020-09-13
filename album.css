@@ -33,7 +33,7 @@ footer p {
 }
 
 /* Menu */
-
+/*
 nav.navbar.fixed-top {
   max-height: 100%;
   background-color: rgb(41, 102, 216);
@@ -45,6 +45,11 @@ nav.navbar.fixed-top {
       background-color: rgb(216, 41, 41);
       overflow-y: visible;
   }
+}*/
+
+.navbar-collapse.collapse.show {
+  max-height: 280px;
+  overflow-y: auto;
 }
 
 /*
