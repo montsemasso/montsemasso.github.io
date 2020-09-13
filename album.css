@@ -41,12 +41,12 @@ footer p {
   }
 }
 
-
+/*
 @media (min-width: 1200px) {
   dd-menu {      
     overflow-y: visible;
   }
-} 
+} */
 
 /*  Navbar top fixed */
 body {
