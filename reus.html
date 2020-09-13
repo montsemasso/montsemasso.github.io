@@ -1,170 +1,85 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Montse Massó">
-    <title>Montse Massó - Pintura</title>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Montse Massó">
+  <title>Montse Massó - Pintura</title>
 
-    <link rel="icon" href="https://fonts.gstatic.com/s/i/materialicons/palette/v6/24px.svg" sizes="32x32" type="image/png">
+  <link rel="icon" href="https://fonts.gstatic.com/s/i/materialicons/palette/v6/24px.svg" sizes="32x32" type="image/png">
+  <link rel="canonical" href="https://example.com/reus-album/">
 
-    <link rel="canonical" href="https://example.com/reus-album/">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/popper.min.js" integrity="sha512-eHo1pysFqNmmGhQ8DnYZfBVDlgFSbv3rxS0b/5+Eyvgem/xk0068cceD8GTlJOZsUrtjANIrFhhlwmsL1K3PKg==" crossorigin="anonymous"></script>
 
-    <!-- Bootstrap core CSS -->
-<!--<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">-->
+  <link type="text/css" rel="stylesheet" href="/dist/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <script src="/dist/bootstrap/4.5.2/js/bootstrap.bundle.min.js" ></script>
 
+  <link rel="stylesheet" href="/dist/jg/3.8.0/css/justifiedGallery.css" />
+  <script src="/dist/jg/3.8.0/js/jquery.justifiedGallery.js"></script>
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
+  <link type="text/css" rel="stylesheet" href="/dist/lg/1.8.2/css/lightgallery.css" />
+  <script src="/dist/lg/1.8.2/js/lightgallery.min.js"></script>
+  <script src="/dist/lg/1.8.2/js/modules/lg-thumbnail.min.js"></script>
+  <script src="/dist/lg/1.8.2/js/modules/lg-fullscreen.min.js"></script>
+  <script src="/dist/lg/1.8.2/js/modules/lg-zoom.js"></script>
+  <script src="/dist/lg/1.8.2/js/modules/lg-autoplay.js"></script>
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-    <!-- Custom styles for this template -->
-    <link href="album.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dancing%20Script" rel="stylesheet">
 
+  <link href="album.css" rel="stylesheet">
 
+  <script> 
+    $(function(){
+      $("#mmnavbar").load("/assets/components/navbar.html"); 
+      $("#mmjgallery").load("/assets/components/jgallery.html"); 
+      $("#mmfooter").load("/assets/components/footer.html");
+    });
+  </script> 
+</head>
 
-
-        <!-- Bootstrap CSS -->
-        <link type="text/css" rel="stylesheet" href="/dist/bootstrap/4.5.2/css/bootstrap.min.css" />
-
-        <!-- LG CSS -->
-        <link type="text/css" rel="stylesheet" href="/dist/lg/1.8.2/css/lightgallery.css" />
-
-        <link href="https://fonts.googleapis.com/css?family=Dancing%20Script" rel="stylesheet">
-
-<!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-      <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.min.js"></script>-->
-      
-
-    <!-- jQuery first, then Popper.js -->
-    <!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>-->
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/popper.min.js" integrity="sha512-eHo1pysFqNmmGhQ8DnYZfBVDlgFSbv3rxS0b/5+Eyvgem/xk0068cceD8GTlJOZsUrtjANIrFhhlwmsL1K3PKg==" crossorigin="anonymous"></script>
-
-    <!--<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>-->
-
-    <script src="/dist/bootstrap/4.5.2/js/bootstrap.bundle.min.js" ></script>
-
-    <link rel="stylesheet" href="/dist/jg/3.8.0/css/justifiedGallery.css" />
-    <script src="/dist/jg/3.8.0/js/jquery.justifiedGallery.js"></script>
-
-    <script src="/dist/lg/1.8.2/js/lightgallery.min.js"></script>
-    <script src="/dist/lg/1.8.2/js/modules/lg-thumbnail.min.js"></script>
-    <script src="/dist/lg/1.8.2/js/modules/lg-fullscreen.min.js"></script>
-    <script src="/dist/lg/1.8.2/js/modules/lg-zoom.js"></script>
-    <script src="/dist/lg/1.8.2/js/modules/lg-autoplay.js"></script>
-
-
-
-
-    <script> 
-      $(function(){
-        $("#mmnavbar").load("navbar.html"); 
-        $("#mmfooter").load("/assets/components/footer.html");
-      });
-      </script> 
-
-
-
-  </head>
-
-  <body>
-
-    <div id="mmnavbar"></div>
-
+<body>
+  <div id="mmnavbar"></div>
   <main class="container">
     <h1 class="jg-h1">Mercat central</h1>
-
-  <div class="album py-4">
-    <div class="container">      
-      <div class="row">
-        <div id="mygallery">
-
+    <div class="album py-4">
+      <div class="container">      
+        <div class="row">
+          <div id="mygallery">
             <a href="/assets/collections/reus/N0001.jpg">
               <img src="/assets/collections/reus/N0001_th.JPG" alt="001" />
               <div class="jg-caption">
                 <div>Mercat 1</div>
                 <div>30x40 8F</div>
-            </div>
-      
+              </div>
             </a>
             <a href="/assets/collections/reus/N0002.jpg">
               <img src="/assets/collections/reus/N0002_th.JPG" alt="002" />
               <div class="jg-caption">
                 <div>Mercat 2</div>
                 <div>30x40 8P</div>
-            </div>
+              </div>
             </a>
-      
             <a href="/assets/collections/reus/N0001.jpg">
               <img src="/assets/collections/reus/N0001_th.JPG" alt="001" />
               <div class="jg-caption">
                 <div>Mercat 1</div>
                 <div>30x40 8F</div>
+              </div>
+              <a href="/assets/collections/reus/N0003.jpg" >
+                <img src="/assets/collections/reus/N0003_th.JPG" alt="003"/>
+                <div class="jg-caption">
+                  <div>Mercat 3</div>
+                  <div>30x40 6F</div>
+                </div>
+              </a>
             </div>
-
-            <a href="/assets/collections/reus/N0003.jpg" >
-              <img src="/assets/collections/reus/N0003_th.JPG" alt="003"/>
-              <div class="jg-caption">
-                <div>Mercat 3</div>
-                <div>30x40 6F</div>
-            </div>
-            </a>
-      
-      
-            
-         
-      
+            <div id="mmjgallery"></div>
           </div>
-
-
-<script>
-
-
-$('#mygallery').justifiedGallery({
-            rowHeight : 180,
-            maxRowHeight: 270,
-            margins: 3 ,
-            border: 0,
-            lastRow : 'nojustify'
-      }).on('jg.complete', function () {
-          $('#mygallery').lightGallery({
-            hideBarsDelay: 1500,
-            thumbnail:true,
-            animateThumb: true,
-            getCaptionFromTitleOrAlt: false,
-            download: false
-          });
-      });
-
-</script>
-
-        
+        </div>
       </div>
-    </div>
-  </div>
-
-</main>
-
-
-<div id="mmfooter"></div>
-
-</body>
-
-
-</html>
+    </main>
+    <div id="mmfooter"></div>
+  </body>
+  </html>
