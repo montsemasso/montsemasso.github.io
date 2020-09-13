@@ -33,13 +33,28 @@ footer p {
 }
 
 /* Menu */
+
+nav.navbar.fixed-top {
+  max-height: 100%;
+  background-color: rgb(41, 102, 216);
+  overflow-y: auto;
+}
+
+@media (min-width: 992px) {
+  nav.navbar.fixed-top {
+      background-color: rgb(216, 41, 41);
+      overflow-y: visible;
+  }
+}
+
+/*
 @media (max-width: 1199.98px) {
   dropdown-menu.show {
     background-color: rgb(216, 41, 41);
     max-height: 320px;
     overflow-y: auto;
   }
-}
+}*/
 /*
 dd-menu {
   @media (max-width: 1199.98px) {
