@@ -33,9 +33,9 @@ footer p {
 }
 
 
-nav.navbar.fixed-top {
+.navbar-collapse.collapse.show {
   max-height: 280px;
-  overflow-y:auto;
+  overflow-y: auto;
 }
 
 /* Menu */
