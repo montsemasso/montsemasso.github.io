@@ -1,25 +1,19 @@
-    <div id="mmjgallery">
-
-        <script>
-
-
-            $('#mygallery').justifiedGallery({
-                        rowHeight : 180,
-                        maxRowHeight: 270,
-                        margins: 3 ,
-                        border: 0,
-                        lastRow : 'nojustify'
-                  }).on('jg.complete', function () {
-                      $('#mygallery').lightGallery({
-                        hideBarsDelay: 1500,
-                        thumbnail:true,
-                        animateThumb: true,
-                        getCaptionFromTitleOrAlt: false,
-                        download: false
-                      });
-                  });
-            
-            </script>
-
-
-    </div>
+<div id="mmjgallery">
+    <script>
+      $('#mygallery').justifiedGallery({
+        rowHeight : 180,
+        maxRowHeight: 270,
+        margins: 3 ,
+        border: 0,
+        lastRow : 'nojustify'
+      }).on('jg.complete', function () {
+        $('#mygallery').lightGallery({
+          hideBarsDelay: 1500,
+          thumbnail:true,
+          animateThumb: true,
+          getCaptionFromTitleOrAlt: false,
+          download: false
+        });
+      });
+    </script>
+</div>
