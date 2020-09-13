@@ -32,6 +32,12 @@ footer p {
   margin-bottom: .25rem;
 }
 
+
+nav.navbar.fixed-top {
+  max-height:100%;
+  overflow-y:auto;
+}
+
 /* Menu */
 /*
 nav.navbar.fixed-top {
@@ -46,12 +52,12 @@ nav.navbar.fixed-top {
       overflow-y: visible;
   }
 }*/
-
+/*
 .navbar-collapse.collapse.show {
-/*  max-height: 280px;*/
+max-height: 280px;
   max-height: 100%;
   overflow-y: auto;
-}
+}*/
 
 /*
 @media (min-width: 992px) {
