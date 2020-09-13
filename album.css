@@ -53,11 +53,12 @@ nav.navbar.fixed-top {
   overflow-y: auto;
 }
 
+/*
 @media (min-width: 992px) {
   navbar-collapse.collapse.show {
       overflow-y: visible;
   }
-}
+}*/
 
 /*
 nav.navbar.fixed-top {
