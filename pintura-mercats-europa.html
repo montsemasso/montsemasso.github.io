@@ -54,6 +54,69 @@
       overflow-y: hidden;
       overflow-x: hidden;
     }
+
+
+    .carousel .carousel-item {
+  
+  height:70vh;
+ width:100%;
+}
+
+
+
+
+
+
+
+.carousel-item img {
+    position: absolute;
+    object-fit:cover;
+    top: 0;
+    left: 0;
+    min-height: 500px;
+}
+
+.carousel-caption{
+      background-color: #282828;
+      opacity: 0.8;
+}
+
+.carousel-indicators li {
+    height: 10px;
+    width: 60px;
+  }
+
+
+    .thumbnail img {
+    height:200px;
+    width:auto;
+    }
+
+
+    .hovereffect {
+    width:100%;
+    height:100%;
+    float:left;
+    overflow:hidden;
+    position:relative;
+    text-align:center;
+    cursor:default;
+    }
+
+    .hovereffect img {
+    display:block;
+    position:relative;
+    -webkit-transition:all .4s linear;
+    transition:all .4s linear;
+    text-align:center;
+    display: inline-block;
+    }
+
+    .hovereffect:hover img {
+    -ms-transform:scale(1.2);
+    -webkit-transform:scale(1.2);
+    transform:scale(1.2);
+    }
     </style>
 
   </head>
@@ -63,11 +126,11 @@
   <div class="container">
     <a class="navbar-brand" href="/">
 
-          <strong>Montse Massó</strong>
-
+          MONTSE MASSÓ
+<!--
           <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-brush" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" d="M15.825.12a.5.5 0 0 1 .132.584c-1.53 3.43-4.743 8.17-7.095 10.64a6.067 6.067 0 0 1-2.373 1.534c-.018.227-.06.538-.16.868-.201.659-.667 1.479-1.708 1.74a8.117 8.117 0 0 1-3.078.132 3.658 3.658 0 0 1-.563-.135 1.382 1.382 0 0 1-.465-.247.714.714 0 0 1-.204-.288.622.622 0 0 1 .004-.443c.095-.245.316-.38.461-.452.393-.197.625-.453.867-.826.094-.144.184-.297.287-.472l.117-.198c.151-.255.326-.54.546-.848.528-.739 1.2-.925 1.746-.896.126.007.243.025.348.048.062-.172.142-.38.238-.608.261-.619.658-1.419 1.187-2.069 2.175-2.67 6.18-6.206 9.117-8.104a.5.5 0 0 1 .596.04zM4.705 11.912a1.23 1.23 0 0 0-.419-.1c-.247-.013-.574.05-.88.479a11.01 11.01 0 0 0-.5.777l-.104.177c-.107.181-.213.362-.32.528-.206.317-.438.61-.76.861a7.127 7.127 0 0 0 2.657-.12c.559-.139.843-.569.993-1.06a3.121 3.121 0 0 0 .126-.75l-.793-.792zm1.44.026c.12-.04.277-.1.458-.183a5.068 5.068 0 0 0 1.535-1.1c1.9-1.996 4.412-5.57 6.052-8.631-2.591 1.927-5.566 4.66-7.302 6.792-.442.543-.796 1.243-1.042 1.826a11.507 11.507 0 0 0-.276.721l.575.575zm-4.973 3.04l.007-.005a.031.031 0 0 1-.007.004zm3.582-3.043l.002.001h-.002z"/>
-          </svg>
+          </svg>-->
 
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -75,60 +138,460 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="/">Portada
-            <span class="sr-only">(current)</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/biografia">Biografia</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Obra
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="/pintura-mercats-central-reus"><img style="height: 16px; width: auto;" src="/assets/flags/reu.png"> Mercat Central 1</a>
-            <a class="dropdown-item" href="/pintura-mercats-central-reus-2"><img style="height: 16px; width: auto;" src="/assets/flags/reu.png"> Mercat Central 2</a>
-            <a class="dropdown-item" href="/pintura-mercats-reus"><img style="height: 16px; width: auto;" src="/assets/flags/reu.png"> Mercats de Reus</a>
-            <a class="dropdown-item" href="/pintura-mercats-catalunya"><img style="height: 16px; width: auto;" src="/assets/flags/cat.svg"> Catalunya</a>
-            <a class="dropdown-item" href="/pintura-mercats-espanya"><img style="height: 16px; width: auto;" src="/assets/flags/spa.svg"> Espanya</a>
-            <a class="dropdown-item" href="/pintura-mercats-europa"><img style="height: 16px; width: auto;" src="/assets/flags/eur.svg"> Europa</a>
-            <a class="dropdown-item" href="/pintura-mercats-polonia"><img style="height: 16px; width: auto;" src="/assets/flags/pol.svg">  Polonia</a>
-            <a class="dropdown-item" href="/pintura-mercats-africa"><img style="height: 16px; width: auto;" src="/assets/flags/bur.svg">  Africa</a>
-            <!--<div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>-->
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mides</a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="/mida-30x25">30x25</a>
-            <a class="dropdown-item" href="/mida-41x33-6F">41x33 6F</a>
-            <a class="dropdown-item" href="/mida-46x33-8P">46x33 8P</a>
-            <a class="dropdown-item" href="/mida-46x38-8F">46x38 8F</a>
-            <a class="dropdown-item" href="/mida-55x38-10P">55x38 10P</a>
-            <a class="dropdown-item" href="/mida-55x46-10F">55x46 10F</a>
-            <a class="dropdown-item" href="/mida-61x46-12P">61x46 12P</a>
-            <a class="dropdown-item" href="/mida-61x50-12F">61x50 12F</a>
-            <a class="dropdown-item" href="/mida-65x46-15M">65x46 15M</a>
-            <a class="dropdown-item" href="/mida-65x54-15F">65x54 15F</a>
-            <a class="dropdown-item" href="/mida-70x50">70x50</a>
-            <a class="dropdown-item" href="/mida-73x54-20P">73x54 20P</a>
-            <a class="dropdown-item" href="/mida-73x60-20F">73x60 20F</a>
-            <a class="dropdown-item" href="/mida-81x60-25P">81x60 25P</a>
-            <a class="dropdown-item" href="/mida-81x65-25F">81x65 25F</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://www.instagram.com/montse.mercats/">Instagram
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
-          </a>
+
+        
+        
+
+        
+        
+
+            
+            
+            
+            
 
 
 
 
-        </li>
+
+            
+                <li class="nav-item  ">
+                    <a class="nav-link" href="/">PORTADA</a>
+                </li>
+            
+        
+
+            
+            
+            
+            
+
+
+
+
+
+            
+                <li class="nav-item  ">
+                    <a class="nav-link" href="/biografia">BIOGRAFIA</a>
+                </li>
+            
+        
+
+            
+            
+            
+            
+
+
+
+
+
+            
+                <li class="nav-item dropdown ">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">OBRA <span class="caret"></span></a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+
+
+
+
+                        
+                      
+                        
+                      
+
+
+
+
+                                <a class="dropdown-item " href="/pintura-mercats-central-reus-1">MERCAT CENTRAL 1</a>
+
+                        
+
+
+
+
+                        
+                      
+                        
+                      
+
+
+
+
+                                <a class="dropdown-item " href="/pintura-mercats-central-reus-2">MERCAT CENTRAL 2</a>
+
+                        
+
+
+
+
+                        
+                      
+                        
+                      
+
+
+
+
+                                <a class="dropdown-item " href="/pintura-mercats-reus">MERCATS DE REUS</a>
+
+                        
+
+
+
+
+                        
+                      
+                        
+                      
+
+
+
+
+                                <a class="dropdown-item " href="/pintura-mercats-catalunya">CATALUNYA</a>
+
+                        
+
+
+
+
+                        
+                      
+                        
+                      
+
+
+
+
+                                <a class="dropdown-item " href="/pintura-mercats-espanya">ESPANYA</a>
+
+                        
+
+
+
+
+                        
+                      
+                        
+                      
+
+
+
+
+                                <a class="dropdown-item " href="/pintura-mercats-polonia">POLONIA</a>
+
+                        
+
+
+
+
+                        
+                      
+                        
+                      
+
+
+
+
+                                <a class="dropdown-item active" href="/pintura-mercats-europa">EUROPA</a>
+
+                        
+
+
+
+
+                        
+                      
+                        
+                      
+
+
+
+
+                                <a class="dropdown-item " href="/pintura-mercats-africa">AFRICA</a>
+
+                        
+                    </div>
+                </li>
+            
+        
+
+            
+            
+            
+            
+
+
+
+
+
+            
+                <li class="nav-item dropdown ">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MIDA <span class="caret"></span></a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+
+
+
+
+                        
+                      
+                        
+                      
+
+
+
+
+                                <a class="dropdown-item " href="/mida-30x25">30x25</a>
+
+                        
+
+
+
+
+                        
+                      
+                        
+                      
+
+
+
+
+                                <a class="dropdown-item " href="/mida-41x33-6F">41x33 6F</a>
+
+                        
+
+
+
+
+                        
+                      
+                        
+                      
+
+
+
+
+                                <a class="dropdown-item " href="/mida-46x33-8P">46x33 8P</a>
+
+                        
+
+
+
+
+                        
+                      
+                        
+                      
+
+
+
+
+                                <a class="dropdown-item " href="/mida-46x38-8F">46x38 8F</a>
+
+                        
+
+
+
+
+                        
+                      
+                        
+                      
+
+
+
+
+                                <a class="dropdown-item " href="/mida-55x38-10P">55x38 10P</a>
+
+                        
+
+
+
+
+                        
+                      
+                        
+                      
+
+
+
+
+                                <a class="dropdown-item " href="/mida-55x46-10F">55x46 10F</a>
+
+                        
+
+
+
+
+                        
+                      
+                        
+                      
+
+
+
+
+                                <a class="dropdown-item " href="/mida-61x46-12P">61x46 12P</a>
+
+                        
+
+
+
+
+                        
+                      
+                        
+                      
+
+
+
+
+                                <a class="dropdown-item " href="/mida-61x50-12F">61x50 12F</a>
+
+                        
+
+
+
+
+                        
+                      
+                        
+                      
+
+
+
+
+                                <a class="dropdown-item " href="/mida-65x46-15M">65x46 15M</a>
+
+                        
+
+
+
+
+                        
+                      
+                        
+                      
+
+
+
+
+                                <a class="dropdown-item " href="/mida-65x54-15F">65x54 15F</a>
+
+                        
+
+
+
+
+                        
+                      
+                        
+                      
+
+
+
+
+                                <a class="dropdown-item " href="/mida-70x50">70x50</a>
+
+                        
+
+
+
+
+                        
+                      
+                        
+                      
+
+
+
+
+                                <a class="dropdown-item " href="/mida-73x54-20P">73x54 20P</a>
+
+                        
+
+
+
+
+                        
+                      
+                        
+                      
+
+
+
+
+                                <a class="dropdown-item " href="/mida-73x60-20F">73x60 20F</a>
+
+                        
+
+
+
+
+                        
+                      
+                        
+                      
+
+
+
+
+                                <a class="dropdown-item " href="/mida-81x60-25P">81x60 25P</a>
+
+                        
+
+
+
+
+                        
+                      
+                        
+                      
+
+
+
+
+                                <a class="dropdown-item " href="/mida-81x65-25F">81x65 25F</a>
+
+                        
+                    </div>
+                </li>
+            
+        
+
+            
+            
+            
+            
+
+
+
+
+
+            
+                <li class="nav-item  ">
+                    <a class="nav-link" href="https://www.instagram.com/montse.mercats">INSTAGRAM</a>
+                </li>
+            
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       </ul>
     </div>
   </div>
@@ -136,161 +599,376 @@
 
 
     <div class="container">
-      <div class="row my-4">
-  <h1>Mercats d'Europa</h1>
+      <div class="container">
+  <h1 class="font-weight-light text-center mt-4 mb-0">Europa</h1>
+  <hr class="mt-2 mb-5"/>
+  <div id="mmgallery" class="row text-center">
+     <div class="col-lg-3 col-md-4 col-sm-6 col-12 ">
+        <div class="thumbnail bg-light d-block mb-4 mh-100"
+             data-src="/assets/images/0113_o.jpg">
+           <a href="/assets/images/0113_o.jpg" class="hovereffect">
+              <img class="img-fluid img-thumbnail" src="/assets/images/0113_t.jpg"/>
+           </a>
+           <div class="caption">
+              <p style="margin: 0">CARCASSONNE 1</p>
+              <p style="margin: 0">55x46 10F</p>
+           </div>
+        </div>
+     </div>
+     <div class="col-lg-3 col-md-4 col-sm-6 col-12 ">
+        <div class="thumbnail bg-light d-block mb-4 mh-100"
+             data-src="/assets/images/0114_o.jpg">
+           <a href="/assets/images/0114_o.jpg" class="hovereffect">
+              <img class="img-fluid img-thumbnail" src="/assets/images/0114_t.jpg"/>
+           </a>
+           <div class="caption">
+              <p style="margin: 0">SAINT-JEAN-DE-LUZ 1</p>
+              <p style="margin: 0">55x46 10F</p>
+           </div>
+        </div>
+     </div>
+     <div class="col-lg-3 col-md-4 col-sm-6 col-12 ">
+        <div class="thumbnail bg-light d-block mb-4 mh-100"
+             data-src="/assets/images/0115_o.jpg">
+           <a href="/assets/images/0115_o.jpg" class="hovereffect">
+              <img class="img-fluid img-thumbnail" src="/assets/images/0115_t.jpg"/>
+           </a>
+           <div class="caption">
+              <p style="margin: 0">SAINT-JEAN-DE-LUZ 2</p>
+              <p style="margin: 0">55x46 10F</p>
+           </div>
+        </div>
+     </div>
+     <div class="col-lg-3 col-md-4 col-sm-6 col-12 ">
+        <div class="thumbnail bg-light d-block mb-4 mh-100"
+             data-src="/assets/images/0116_o.jpg">
+           <a href="/assets/images/0116_o.jpg" class="hovereffect">
+              <img class="img-fluid img-thumbnail" src="/assets/images/0116_t.jpg"/>
+           </a>
+           <div class="caption">
+              <p style="margin: 0">SAINT-JEAN-DE-LUZ 3</p>
+              <p style="margin: 0">55x38 10P</p>
+           </div>
+        </div>
+     </div>
+     <div class="col-lg-3 col-md-4 col-sm-6 col-12 ">
+        <div class="thumbnail bg-light d-block mb-4 mh-100"
+             data-src="/assets/images/0117_o.jpg">
+           <a href="/assets/images/0117_o.jpg" class="hovereffect">
+              <img class="img-fluid img-thumbnail" src="/assets/images/0117_t.jpg"/>
+           </a>
+           <div class="caption">
+              <p style="margin: 0">SAINT-JEAN-DE-LUZ 4</p>
+              <p style="margin: 0">61x50 12F</p>
+           </div>
+        </div>
+     </div>
+     <div class="col-lg-3 col-md-4 col-sm-6 col-12 ">
+        <div class="thumbnail bg-light d-block mb-4 mh-100"
+             data-src="/assets/images/0118_o.jpg">
+           <a href="/assets/images/0118_o.jpg" class="hovereffect">
+              <img class="img-fluid img-thumbnail" src="/assets/images/0118_t.jpg"/>
+           </a>
+           <div class="caption">
+              <p style="margin: 0">SAINT-JEAN-DE-LUZ 5</p>
+              <p style="margin: 0">61x50 12F</p>
+           </div>
+        </div>
+     </div>
+     <div class="col-lg-3 col-md-4 col-sm-6 col-12 ">
+        <div class="thumbnail bg-light d-block mb-4 mh-100"
+             data-src="/assets/images/0119_o.jpg">
+           <a href="/assets/images/0119_o.jpg" class="hovereffect">
+              <img class="img-fluid img-thumbnail" src="/assets/images/0119_t.jpg"/>
+           </a>
+           <div class="caption">
+              <p style="margin: 0">SAINT-JEAN-DE-LUZ 6</p>
+              <p style="margin: 0">61x46 12P</p>
+           </div>
+        </div>
+     </div>
+     <div class="col-lg-3 col-md-4 col-sm-6 col-12 ">
+        <div class="thumbnail bg-light d-block mb-4 mh-100"
+             data-src="/assets/images/0120_o.jpg">
+           <a href="/assets/images/0120_o.jpg" class="hovereffect">
+              <img class="img-fluid img-thumbnail" src="/assets/images/0120_t.jpg"/>
+           </a>
+           <div class="caption">
+              <p style="margin: 0">SAINT-JEAN-DE-LUZ 7</p>
+              <p style="margin: 0">73x60 20F</p>
+           </div>
+        </div>
+     </div>
+     <div class="col-lg-3 col-md-4 col-sm-6 col-12 ">
+        <div class="thumbnail bg-light d-block mb-4 mh-100"
+             data-src="/assets/images/0121_o.jpg">
+           <a href="/assets/images/0121_o.jpg" class="hovereffect">
+              <img class="img-fluid img-thumbnail" src="/assets/images/0121_t.jpg"/>
+           </a>
+           <div class="caption">
+              <p style="margin: 0">SAINT-JEAN-DE-LUZ 8</p>
+              <p style="margin: 0">65x54 15F</p>
+           </div>
+        </div>
+     </div>
+     <div class="col-lg-3 col-md-4 col-sm-6 col-12 ">
+        <div class="thumbnail bg-light d-block mb-4 mh-100"
+             data-src="/assets/images/0122_o.jpg">
+           <a href="/assets/images/0122_o.jpg" class="hovereffect">
+              <img class="img-fluid img-thumbnail" src="/assets/images/0122_t.jpg"/>
+           </a>
+           <div class="caption">
+              <p style="margin: 0">OPORTO 1</p>
+              <p style="margin: 0">41x33 6F</p>
+           </div>
+        </div>
+     </div>
+     <div class="col-lg-3 col-md-4 col-sm-6 col-12 ">
+        <div class="thumbnail bg-light d-block mb-4 mh-100"
+             data-src="/assets/images/0123_o.jpg">
+           <a href="/assets/images/0123_o.jpg" class="hovereffect">
+              <img class="img-fluid img-thumbnail" src="/assets/images/0123_t.jpg"/>
+           </a>
+           <div class="caption">
+              <p style="margin: 0">OPORTO 2</p>
+              <p style="margin: 0">41x33 6F</p>
+           </div>
+        </div>
+     </div>
+     <div class="col-lg-3 col-md-4 col-sm-6 col-12 ">
+        <div class="thumbnail bg-light d-block mb-4 mh-100"
+             data-src="/assets/images/0124_o.jpg">
+           <a href="/assets/images/0124_o.jpg" class="hovereffect">
+              <img class="img-fluid img-thumbnail" src="/assets/images/0124_t.jpg"/>
+           </a>
+           <div class="caption">
+              <p style="margin: 0">OPORTO 3</p>
+              <p style="margin: 0">46x38 8F</p>
+           </div>
+        </div>
+     </div>
+     <div class="col-lg-3 col-md-4 col-sm-6 col-12 ">
+        <div class="thumbnail bg-light d-block mb-4 mh-100"
+             data-src="/assets/images/0125_o.jpg">
+           <a href="/assets/images/0125_o.jpg" class="hovereffect">
+              <img class="img-fluid img-thumbnail" src="/assets/images/0125_t.jpg"/>
+           </a>
+           <div class="caption">
+              <p style="margin: 0">OPORTO 4</p>
+              <p style="margin: 0">46x38 8F</p>
+           </div>
+        </div>
+     </div>
+     <div class="col-lg-3 col-md-4 col-sm-6 col-12 ">
+        <div class="thumbnail bg-light d-block mb-4 mh-100"
+             data-src="/assets/images/0126_o.jpg">
+           <a href="/assets/images/0126_o.jpg" class="hovereffect">
+              <img class="img-fluid img-thumbnail" src="/assets/images/0126_t.jpg"/>
+           </a>
+           <div class="caption">
+              <p style="margin: 0">OPORTO 5</p>
+              <p style="margin: 0">55x46 10F</p>
+           </div>
+        </div>
+     </div>
+     <div class="col-lg-3 col-md-4 col-sm-6 col-12 ">
+        <div class="thumbnail bg-light d-block mb-4 mh-100"
+             data-src="/assets/images/0127_o.jpg">
+           <a href="/assets/images/0127_o.jpg" class="hovereffect">
+              <img class="img-fluid img-thumbnail" src="/assets/images/0127_t.jpg"/>
+           </a>
+           <div class="caption">
+              <p style="margin: 0">OPORTO 6</p>
+              <p style="margin: 0">55x38 10P</p>
+           </div>
+        </div>
+     </div>
+     <div class="col-lg-3 col-md-4 col-sm-6 col-12 ">
+        <div class="thumbnail bg-light d-block mb-4 mh-100"
+             data-src="/assets/images/0128_o.jpg">
+           <a href="/assets/images/0128_o.jpg" class="hovereffect">
+              <img class="img-fluid img-thumbnail" src="/assets/images/0128_t.jpg"/>
+           </a>
+           <div class="caption">
+              <p style="margin: 0">OPORTO 7</p>
+              <p style="margin: 0">61x46 12P</p>
+           </div>
+        </div>
+     </div>
+     <div class="col-lg-3 col-md-4 col-sm-6 col-12 ">
+        <div class="thumbnail bg-light d-block mb-4 mh-100"
+             data-src="/assets/images/0129_o.jpg">
+           <a href="/assets/images/0129_o.jpg" class="hovereffect">
+              <img class="img-fluid img-thumbnail" src="/assets/images/0129_t.jpg"/>
+           </a>
+           <div class="caption">
+              <p style="margin: 0">ROMA 1</p>
+              <p style="margin: 0">55x46 10F</p>
+           </div>
+        </div>
+     </div>
+     <div class="col-lg-3 col-md-4 col-sm-6 col-12 ">
+        <div class="thumbnail bg-light d-block mb-4 mh-100"
+             data-src="/assets/images/0130_o.jpg">
+           <a href="/assets/images/0130_o.jpg" class="hovereffect">
+              <img class="img-fluid img-thumbnail" src="/assets/images/0130_t.jpg"/>
+           </a>
+           <div class="caption">
+              <p style="margin: 0">ROMA 2</p>
+              <p style="margin: 0">61x46 12P</p>
+           </div>
+        </div>
+     </div>
+     <div class="col-lg-3 col-md-4 col-sm-6 col-12 ">
+        <div class="thumbnail bg-light d-block mb-4 mh-100"
+             data-src="/assets/images/0131_o.jpg">
+           <a href="/assets/images/0131_o.jpg" class="hovereffect">
+              <img class="img-fluid img-thumbnail" src="/assets/images/0131_t.jpg"/>
+           </a>
+           <div class="caption">
+              <p style="margin: 0">ROMA 3</p>
+              <p style="margin: 0">61x46 12P</p>
+           </div>
+        </div>
+     </div>
+     <div class="col-lg-3 col-md-4 col-sm-6 col-12 ">
+        <div class="thumbnail bg-light d-block mb-4 mh-100"
+             data-src="/assets/images/0132_o.jpg">
+           <a href="/assets/images/0132_o.jpg" class="hovereffect">
+              <img class="img-fluid img-thumbnail" src="/assets/images/0132_t.jpg"/>
+           </a>
+           <div class="caption">
+              <p style="margin: 0">PORTOBELLO ROAD MARKET 1</p>
+              <p style="margin: 0">41x33 6F</p>
+           </div>
+        </div>
+     </div>
+     <div class="col-lg-3 col-md-4 col-sm-6 col-12 ">
+        <div class="thumbnail bg-light d-block mb-4 mh-100"
+             data-src="/assets/images/0133_o.jpg">
+           <a href="/assets/images/0133_o.jpg" class="hovereffect">
+              <img class="img-fluid img-thumbnail" src="/assets/images/0133_t.jpg"/>
+           </a>
+           <div class="caption">
+              <p style="margin: 0">PORTOBELLO ROAD MARKET 2</p>
+              <p style="margin: 0">46x33 8P</p>
+           </div>
+        </div>
+     </div>
+     <div class="col-lg-3 col-md-4 col-sm-6 col-12 ">
+        <div class="thumbnail bg-light d-block mb-4 mh-100"
+             data-src="/assets/images/0134_o.jpg">
+           <a href="/assets/images/0134_o.jpg" class="hovereffect">
+              <img class="img-fluid img-thumbnail" src="/assets/images/0134_t.jpg"/>
+           </a>
+           <div class="caption">
+              <p style="margin: 0">PORTOBELLO ROAD MARKET 3</p>
+              <p style="margin: 0">61x50 12F</p>
+           </div>
+        </div>
+     </div>
+     <div class="col-lg-3 col-md-4 col-sm-6 col-12 ">
+        <div class="thumbnail bg-light d-block mb-4 mh-100"
+             data-src="/assets/images/0135_o.jpg">
+           <a href="/assets/images/0135_o.jpg" class="hovereffect">
+              <img class="img-fluid img-thumbnail" src="/assets/images/0135_t.jpg"/>
+           </a>
+           <div class="caption">
+              <p style="margin: 0">NAUPLIA 1</p>
+              <p style="margin: 0">46x33 8P</p>
+           </div>
+        </div>
+     </div>
+     <div class="col-lg-3 col-md-4 col-sm-6 col-12 ">
+        <div class="thumbnail bg-light d-block mb-4 mh-100"
+             data-src="/assets/images/0136_o.jpg">
+           <a href="/assets/images/0136_o.jpg" class="hovereffect">
+              <img class="img-fluid img-thumbnail" src="/assets/images/0136_t.jpg"/>
+           </a>
+           <div class="caption">
+              <p style="margin: 0">NAUPLIA 2</p>
+              <p style="margin: 0">46x33 8P</p>
+           </div>
+        </div>
+     </div>
+     <div class="col-lg-3 col-md-4 col-sm-6 col-12 ">
+        <div class="thumbnail bg-light d-block mb-4 mh-100"
+             data-src="/assets/images/0137_o.jpg">
+           <a href="/assets/images/0137_o.jpg" class="hovereffect">
+              <img class="img-fluid img-thumbnail" src="/assets/images/0137_t.jpg"/>
+           </a>
+           <div class="caption">
+              <p style="margin: 0">NAUPLIA 3</p>
+              <p style="margin: 0">55x38 10P</p>
+           </div>
+        </div>
+     </div>
+     <div class="col-lg-3 col-md-4 col-sm-6 col-12 ">
+        <div class="thumbnail bg-light d-block mb-4 mh-100"
+             data-src="/assets/images/0138_o.jpg">
+           <a href="/assets/images/0138_o.jpg" class="hovereffect">
+              <img class="img-fluid img-thumbnail" src="/assets/images/0138_t.jpg"/>
+           </a>
+           <div class="caption">
+              <p style="margin: 0">NAUPLIA 4</p>
+              <p style="margin: 0">61x46 12P</p>
+           </div>
+        </div>
+     </div>
+     <div class="col-lg-3 col-md-4 col-sm-6 col-12 ">
+        <div class="thumbnail bg-light d-block mb-4 mh-100"
+             data-src="/assets/images/0139_o.jpg">
+           <a href="/assets/images/0139_o.jpg" class="hovereffect">
+              <img class="img-fluid img-thumbnail" src="/assets/images/0139_t.jpg"/>
+           </a>
+           <div class="caption">
+              <p style="margin: 0">NAUPLIA 5</p>
+              <p style="margin: 0">61x46 12P</p>
+           </div>
+        </div>
+     </div>
+     <div class="col-lg-3 col-md-4 col-sm-6 col-12 ">
+        <div class="thumbnail bg-light d-block mb-4 mh-100"
+             data-src="/assets/images/0140_o.jpg">
+           <a href="/assets/images/0140_o.jpg" class="hovereffect">
+              <img class="img-fluid img-thumbnail" src="/assets/images/0140_t.jpg"/>
+           </a>
+           <div class="caption">
+              <p style="margin: 0">NAUPLIA 6</p>
+              <p style="margin: 0">73x60 20F</p>
+           </div>
+        </div>
+     </div>
+     <div class="col-lg-3 col-md-4 col-sm-6 col-12 ">
+        <div class="thumbnail bg-light d-block mb-4 mh-100"
+             data-src="/assets/images/0141_o.jpg">
+           <a href="/assets/images/0141_o.jpg" class="hovereffect">
+              <img class="img-fluid img-thumbnail" src="/assets/images/0141_t.jpg"/>
+           </a>
+           <div class="caption">
+              <p style="margin: 0">NAUPLIA 7</p>
+              <p style="margin: 0">65x54 15F</p>
+           </div>
+        </div>
+     </div>
+  </div>
 </div>
-
-  
-  <div class="row my-2">
-  <h2>França: Carcassone i Saint-Jean-de-Luz</h2>
-  <div id="mmgallery" class="justified-gallery my-2">
-    <a href="/assets/images/0113_o.jpg"><img src="/assets/images/0113_t.jpg" alt="France, Carcassonne 1 (55x46 10F)" /><div class="jg-caption"><div>Carcassonne 1</div><div>(55x46 10F)</div></div></a>
-    <a href="/assets/images/0114_o.jpg"><img src="/assets/images/0114_t.jpg" alt="France, Saint-Jean-de-Luz 1 (55x46 10F)" /><div class="jg-caption"><div>Saint-Jean-de-Luz 1</div><div>(55x46 10F)</div></div></a>
-    <a href="/assets/images/0115_o.jpg"><img src="/assets/images/0115_t.jpg" alt="France, Saint-Jean-de-Luz 2 (55x46 10F)" /><div class="jg-caption"><div>Saint-Jean-de-Luz 2</div><div>(55x46 10F)</div></div></a>
-    <a href="/assets/images/0116_o.jpg"><img src="/assets/images/0116_t.jpg" alt="France, Saint-Jean-de-Luz 3 (55x38 10P)" /><div class="jg-caption"><div>Saint-Jean-de-Luz 3</div><div>(55x38 10P)</div></div></a>
-    <a href="/assets/images/0117_o.jpg"><img src="/assets/images/0117_t.jpg" alt="France, Saint-Jean-de-Luz 4 (61x50 12F)" /><div class="jg-caption"><div>Saint-Jean-de-Luz 4</div><div>(61x50 12F)</div></div></a>
-    <a href="/assets/images/0118_o.jpg"><img src="/assets/images/0118_t.jpg" alt="France, Saint-Jean-de-Luz 5 (61x50 12F)" /><div class="jg-caption"><div>Saint-Jean-de-Luz 5</div><div>(61x50 12F)</div></div></a>
-    <a href="/assets/images/0119_o.jpg"><img src="/assets/images/0119_t.jpg" alt="France, Saint-Jean-de-Luz 6 (61x46 12P)" /><div class="jg-caption"><div>Saint-Jean-de-Luz 6</div><div>(61x46 12P)</div></div></a>
-    <a href="/assets/images/0120_o.jpg"><img src="/assets/images/0120_t.jpg" alt="France, Saint-Jean-de-Luz 7 (73x60 20F)" /><div class="jg-caption"><div>Saint-Jean-de-Luz 7</div><div>(73x60 20F)</div></div></a>
-    <a href="/assets/images/0121_o.jpg"><img src="/assets/images/0121_t.jpg" alt="France, Saint-Jean-de-Luz 8 (65x54 15F)" /><div class="jg-caption"><div>Saint-Jean-de-Luz 8</div><div>(65x54 15F)</div></div></a>
-  </div>
-  </div>
-
-  <div class="row my-2">
-    <h2>Portugal: Oporto</h2>
-    <div id="mmgallery2" class="justified-gallery my-2">
-      <a href="/assets/images/0122_o.jpg"><img src="/assets/images/0122_t.jpg" alt="Portugal, Oporto 1 (41x33 6F)" /><div class="jg-caption"><div>Oporto 1</div><div>(41x33 6F)</div></div></a>
-      <a href="/assets/images/0123_o.jpg"><img src="/assets/images/0123_t.jpg" alt="Portugal, Oporto 2 (41x33 6F)" /><div class="jg-caption"><div>Oporto 2</div><div>(41x33 6F)</div></div></a>
-      <a href="/assets/images/0124_o.jpg"><img src="/assets/images/0124_t.jpg" alt="Portugal, Oporto 3 (46x38 8F)" /><div class="jg-caption"><div>Oporto 3</div><div>(46x38 8F)</div></div></a>
-      <a href="/assets/images/0125_o.jpg"><img src="/assets/images/0125_t.jpg" alt="Portugal, Oporto 4 (46x38 8F)" /><div class="jg-caption"><div>Oporto 4</div><div>(46x38 8F)</div></div></a>
-      <a href="/assets/images/0126_o.jpg"><img src="/assets/images/0126_t.jpg" alt="Portugal, Oporto 5 (55x46 10F)" /><div class="jg-caption"><div>Oporto 5</div><div>(55x46 10F)</div></div></a>
-      <a href="/assets/images/0127_o.jpg"><img src="/assets/images/0127_t.jpg" alt="Portugal, Oporto 6 (55x38 10P)" /><div class="jg-caption"><div>Oporto 6</div><div>(55x38 10P)</div></div></a>
-      <a href="/assets/images/0128_o.jpg"><img src="/assets/images/0128_t.jpg" alt="Portugal, Oporto 7 (61x46 12P)" /><div class="jg-caption"><div>Oporto 7</div><div>(61x46 12P)</div></div></a>
-    </div>
-    </div>
-
-<div class="row my-2">
-  <h2>Italia: Roma</h2>
-  <div id="mmgallery3" class="justified-gallery my-2">
-    <a href="/assets/images/0129_o.jpg"><img src="/assets/images/0129_t.jpg" alt="Italia, Roma 1 (55x46 10F)" /><div class="jg-caption"><div>Roma 1</div><div>(55x46 10F)</div></div></a>
-    <a href="/assets/images/0130_o.jpg"><img src="/assets/images/0130_t.jpg" alt="Italia, Roma 2 (61x46 12P)" /><div class="jg-caption"><div>Roma 2</div><div>(61x46 12P)</div></div></a>
-    <a href="/assets/images/0131_o.jpg"><img src="/assets/images/0131_t.jpg" alt="Italia, Roma 3 (61x46 12P)" /><div class="jg-caption"><div>Roma 3</div><div>(61x46 12P)</div></div></a>
-  </div>
-  </div>
-
-  <div class="row my-2">
-    <h2>Anglaterra: Portobello Road, Londres</h2>
-    <div id="mmgallery4" class="justified-gallery my-2">
-        <a href="/assets/images/0132_o.jpg"><img src="/assets/images/0132_t.jpg" alt="Anglaterra, Portobello Road Market 1 (41x33 6F)" /><div class="jg-caption"><div>Portobello Road Market 1</div><div>(41x33 6F)</div></div></a>
-        <a href="/assets/images/0133_o.jpg"><img src="/assets/images/0133_t.jpg" alt="Anglaterra, Portobello Road Market 2 (46x33 8P)" /><div class="jg-caption"><div>Portobello Road Market 2</div><div>(46x33 8P)</div></div></a>
-        <a href="/assets/images/0134_o.jpg"><img src="/assets/images/0134_t.jpg" alt="Anglaterra, Portobello Road Market 3 (61x50 12F)" /><div class="jg-caption"><div>Portobello Road Market 3</div><div>(61x50 12F)</div></div></a>
-    </div>
-    </div>
-
-    <div class="row my-2">
-        <h2>Grecia: Nauplia</h2>
-        <div id="mmgallery5" class="justified-gallery my-2">
-            <a href="/assets/images/0135_o.jpg"><img src="/assets/images/0135_t.jpg" alt="Grecia, Nauplia 1 (46x33 8P)" /><div class="jg-caption"><div>Nauplia 1</div><div>(46x33 8P)</div></div></a>
-            <a href="/assets/images/0136_o.jpg"><img src="/assets/images/0136_t.jpg" alt="Grecia, Nauplia 2 (46x33 8P)" /><div class="jg-caption"><div>Nauplia 2</div><div>(46x33 8P)</div></div></a>
-            <a href="/assets/images/0137_o.jpg"><img src="/assets/images/0137_t.jpg" alt="Grecia, Nauplia 3 (55x38 10P)" /><div class="jg-caption"><div>Nauplia 3</div><div>(55x38 10P)</div></div></a>
-            <a href="/assets/images/0138_o.jpg"><img src="/assets/images/0138_t.jpg" alt="Grecia, Nauplia 4 (61x46 12P)" /><div class="jg-caption"><div>Nauplia 4</div><div>(61x46 12P)</div></div></a>
-            <a href="/assets/images/0139_o.jpg"><img src="/assets/images/0139_t.jpg" alt="Grecia, Nauplia 5 (61x46 12P)" /><div class="jg-caption"><div>Nauplia 5</div><div>(61x46 12P)</div></div></a>
-            <a href="/assets/images/0140_o.jpg"><img src="/assets/images/0140_t.jpg" alt="Grecia, Nauplia 6 (73x60 20F)" /><div class="jg-caption"><div>Nauplia 6</div><div>(73x60 20F)</div></div></a>
-            <a href="/assets/images/0141_o.jpg"><img src="/assets/images/0141_t.jpg" alt="Grecia, Nauplia 7 (65x54 15F)" /><div class="jg-caption"><div>Nauplia 7</div><div>(65x54 15F)</div></div></a>
-        </div>
-        </div>
-
-
-
     </div>
     <div id="mmjgallery">
-        <script>
-          $('#mmgallery').justifiedGallery({
-            rowHeight : 120,
-            maxRowHeight: 240,
-            margins: 3 ,
-            border: 0,
-            lastRow : 'nojustify',
-            waitThumbnailsLoad: false
-          }).on('jg.complete', function () {
-            $('#mmgallery').lightGallery({
-              preload: 2,
-              hideBarsDelay: 1500,
-              thumbnail: true,
-              animateThumb: true,
-              getCaptionFromTitleOrAlt: false,
-              download: false
-            });
+      <script>
+          $(document).ready(function() {
+              $('#mmgallery').lightGallery({
+                selector: '.thumbnail',
+        preload: 2,
+        hideBarsDelay: 4000,
+        thumbnail: true,
+        animateThumb: true,
+        showThumbByDefault: false,
+        getCaptionFromTitleOrAlt: false,
+        download: false
+      });
           });
-          $('#mmgallery2').justifiedGallery({
-            rowHeight : 120,
-            maxRowHeight: 240,
-            margins: 3 ,
-            border: 0,
-            lastRow : 'nojustify',
-            waitThumbnailsLoad: false
-          }).on('jg.complete', function () {
-            $('#mmgallery2').lightGallery({
-              preload: 2,
-              hideBarsDelay: 1500,
-              thumbnail: true,
-              animateThumb: true,
-              getCaptionFromTitleOrAlt: false,
-              download: false
-            });
-          });
-          $('#mmgallery3').justifiedGallery({
-            rowHeight : 120,
-            maxRowHeight: 240,
-            margins: 3 ,
-            border: 0,
-            lastRow : 'nojustify',
-            waitThumbnailsLoad: false
-          }).on('jg.complete', function () {
-            $('#mmgallery3').lightGallery({
-              preload: 2,
-              hideBarsDelay: 1500,
-              thumbnail: true,
-              animateThumb: true,
-              getCaptionFromTitleOrAlt: false,
-              download: false
-            });
-          });
-          $('#mmgallery4').justifiedGallery({
-            rowHeight : 120,
-            maxRowHeight: 240,
-            margins: 3 ,
-            border: 0,
-            lastRow : 'nojustify',
-            waitThumbnailsLoad: false
-          }).on('jg.complete', function () {
-            $('#mmgallery4').lightGallery({
-              preload: 2,
-              hideBarsDelay: 1500,
-              thumbnail: true,
-              animateThumb: true,
-              getCaptionFromTitleOrAlt: false,
-              download: false
-            });
-          });
-          $('#mmgallery5').justifiedGallery({
-            rowHeight : 120,
-            maxRowHeight: 240,
-            margins: 3 ,
-            border: 0,
-            lastRow : 'nojustify',
-            waitThumbnailsLoad: false
-          }).on('jg.complete', function () {
-            $('#mmgallery5').lightGallery({
-              preload: 2,
-              hideBarsDelay: 1500,
-              thumbnail: true,
-              animateThumb: true,
-              getCaptionFromTitleOrAlt: false,
-              download: false
-            });
-          });
-        </script>
+      </script>
     </div>
     <footer class="text-muted bg-white">
   <div class="container">
@@ -300,7 +978,7 @@
         <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"/>
       </svg></a>
     </p>
-    <p>&copy; Montse Massó, Reus 2020</p>
+    <p>&copy; Montse Massó, Reus 2021</p>
   </div>
 </footer>
 
